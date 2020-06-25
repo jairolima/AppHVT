@@ -6,6 +6,7 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 // import {useNavigation} from '@react-navigation/native';
 import Modal from 'react-native-modal';
 // import {useSelector} from 'react-redux';
+
 import api from '~/services/api';
 
 import {Container, Hr, TitleRow, More, CarouselView, Card} from './styles';
@@ -59,11 +60,11 @@ export default function Dashboard() {
         <Container>
           <WavyHeader
             customTop={0}
-            customBgColor="#BE1E2D"
-            customWavePattern="M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,213.3C672,192,768,128,864,128C960,128,1056,192,1152,208C1248,224,1344,192,1392,176L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+            customBgColor="#ccc"
+            customWavePattern="M0,192L30,176C60,160,120,128,180,133.3C240,139,300,181,360,202.7C420,224,480,224,540,202.7C600,181,660,139,720,117.3C780,96,840,96,900,112C960,128,1020,160,1080,186.7C1140,213,1200,235,1260,240C1320,245,1380,235,1410,229.3L1440,224L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
           />
 
-          <TitleRow style={{marginTop: 200}}>
+          <TitleRow style={{marginTop: 40}}>
             <View style={{marginLeft: 20}}>
               <Text>Resgate um produto</Text>
             </View>
@@ -125,14 +126,6 @@ export default function Dashboard() {
                           textAlign: 'center',
                         }}>
                         {product.price} pontos
-                      </Text>
-                      <Text
-                        style={{
-                          fontWeight: 'bold',
-                          color: '#000',
-                          textAlign: 'center',
-                        }}>
-                        Nome do colaborador
                       </Text>
                     </Card>
                   </TouchableOpacity>
@@ -203,14 +196,6 @@ export default function Dashboard() {
                           textAlign: 'center',
                         }}>
                         {service.price} pontos
-                      </Text>
-                      <Text
-                        style={{
-                          fontWeight: 'bold',
-                          color: '#000',
-                          textAlign: 'center',
-                        }}>
-                        Nome do colaborador
                       </Text>
                     </Card>
                   </TouchableOpacity>

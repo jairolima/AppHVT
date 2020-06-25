@@ -9,6 +9,7 @@ export const Container = styled.KeyboardAvoidingView.attrs({
   align-items: center;
   padding: 0 0px;
   width: 100%;
+  background-color: #fff;
 `;
 
 export const Top = styled.View`
